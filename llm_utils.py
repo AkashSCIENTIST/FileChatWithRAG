@@ -2,7 +2,7 @@ from langchain_huggingface.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 
 def get_embeddings():
-    model_name = "sentence-transformers/all-mpnet-base-v2"
+    model_name = "sentence-transformers/all-MiniLM-L6-v2"
     model_kwargs = {'device': 'cpu'}
     encode_kwargs = {'normalize_embeddings': False}
     embedding_function = HuggingFaceEmbeddings( 
